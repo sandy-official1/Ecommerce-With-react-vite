@@ -1,0 +1,31 @@
+.container {
+  margin-bottom: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+  height: 20px;
+  padding: 5px;
+  border: 1px solid #eaeaec;
+  border-radius: 2px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 700;
+  color: #282c3f;
+  gap: 3px;
+  background-color: white;
+}
+
+.separator {
+  margin-left: 8px;
+  margin-top: -2px;
+  color: #d4d5d9;
+  width: 1px;
+}
+
+.ratingCount {
+  margin-left: 8px;
+  font-weight: 400;
+  color: #535766;
+  width: fit-content;
+}

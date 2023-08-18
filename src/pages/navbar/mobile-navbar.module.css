@@ -1,0 +1,125 @@
+.container {
+  font-family: "Assistant", sans-serif;
+  font-weight: 600;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
+  background-color: #fff;
+  max-width: 100vw;
+  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20;
+  height: 100vh;
+  width: 50%;
+  color: #333;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  animation: animate-in 0.3s linear;
+  background: #ece9e6; /* fallback for old browsers */
+  background: linear-gradient(to left, #ffffff, #ece9e6);
+}
+
+@keyframes animate-in {
+  from {
+    opacity: 0;
+    transform: translateX(-60px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.closeIcon {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.link {
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+  margin-top: 50%;
+  margin-bottom: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.link div {
+  font-size: 14px;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 1rem;
+  border: 6px solid #e95175;
+  border-radius: 6px;
+  width: 100px;
+  text-align: center;
+  background-color: #fff;
+  color: #333;
+}
+
+.link div:hover {
+  border: 1px solid #ff3e6c;
+  background-color: #ff3e6b41;
+}
+
+.wishlist {
+  display: flex;
+  align-items: center;
+  border-radius: 6px;
+  gap: 3px;
+  justify-content: center;
+  font-weight: 500;
+  font-size: 10px;
+  cursor: pointer;
+  padding: 12px 15px;
+  border: 1px solid #d4d5d9 !important;
+  letter-spacing: 0.4px;
+  margin-top: 50px;
+  cursor: pointer;
+}
+
+.addToBag {
+  display: flex;
+  border-radius: 6px;
+  padding: 12px 15px;
+  min-width: 108px;
+  font-weight: 700;
+  cursor: pointer;
+  background-color: #ff3e6c !important;
+  border: 1px solid #ff3e6c;
+  color: #fff !important;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border: none !important;
+}
+
+.search {
+  font-family: "Assistant", sans-serif;
+  font-weight: 600;
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
+  background-color: #e8e5e5f9;
+  max-width: 100vw;
+  width: 100%;
+  outline: none;
+  border: none;
+  padding: 1rem;
+  overflow: hidden;
+  animation: animate-in 0.3s linear;
+}

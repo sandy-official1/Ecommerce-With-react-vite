@@ -1,0 +1,40 @@
+.container {
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+}
+
+.commonCheckBox {
+  box-sizing: border-box;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 16px;
+  height: 16px;
+  border: 1px solid #c3c2c9;
+  background: #fff;
+  border-radius: 2px;
+}
+
+.container input:checked ~ .commonCheckBox {
+  background: #ff3f6c;
+  border: none;
+}
+
+.commonCheckBox::after {
+  content: "";
+  display: block;
+  width: 5px;
+  height: 9px;
+  border-right: 2px solid white;
+  border-bottom: 2px solid white;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 2px;
+  left: 5px;
+}
+
+/* new styles */
+.container:hover .commonCheckBox {
+  border-color: #ff3f6c;
+}

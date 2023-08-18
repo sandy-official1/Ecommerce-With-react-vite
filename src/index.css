@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@400;500;600;700&family=Montserrat+Alternates&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Assistant:wght@800&family=Montserrat+Alternates&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100vh;
+  width: 100vw;
+}
+
+body {
+  height: 100%;
+  width: 100%;
+  box-sizing: border-box;
+  font-family:  'Assistant', sans-serif;
+
+}

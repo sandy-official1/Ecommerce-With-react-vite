@@ -1,0 +1,35 @@
+.container {
+  position: fixed;
+  width: 250px;
+  height: auto;
+  overflow-y: auto;
+  top: 83px;
+  bottom: 0;
+  z-index: 2;
+  left: 0;
+  background-color: white;
+  border: 1px solid #d4d5d9;
+  border-top: none;
+}
+
+.subContainer {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.total {
+  font-weight: 700;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  color: #282c3f;
+  max-width: 400px;
+  text-transform: capitalize;
+  font-size: 16px;
+  margin: 0;
+  align-self: self-start;
+  margin-bottom: 20px;
+  margin-left: 10px;
+}
